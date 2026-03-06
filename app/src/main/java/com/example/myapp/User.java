@@ -26,6 +26,7 @@ public class User {
     public String email;
 
 
+    @Ignore
     public User(){}
 
     public User(String password, String name,String email){

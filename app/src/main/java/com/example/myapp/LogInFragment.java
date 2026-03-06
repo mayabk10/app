@@ -51,7 +51,8 @@ LogInListener listener;
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                User user= userDao.getFromName(name.getText().toString());
+                String name2 = name.getText().toString().toLowerCase();
+                User user= userDao.getFromName(name2);
                 if(user==null){
                     Toast.makeText(getContext(),"שם משתמש זה אינו קיים במערכת",Toast.LENGTH_SHORT).show();
                 } else if (!user.getPassword().equals(password.getText().toString()) ) {
