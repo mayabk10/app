@@ -40,7 +40,7 @@ public class WorkOuts {
 
 
 @Ignore
-    public WorkOuts(@NonNull String user, long date, String hour, String kind, int length, String mainExercise) {
+    public WorkOuts( String user, long date, String hour, String kind, int length, String mainExercise) {
         this.user = user;
         this.date = date;
         this.hour = hour;
@@ -49,14 +49,26 @@ public class WorkOuts {
         this.mainExercise = mainExercise;
     }
 
-    public WorkOuts(@NonNull String user,long date, String mainExercise, String kind) {
+     public WorkOuts( String user,long date, String mainExercise, String kind) {
         this.date = date;
         this.user = user;
         this.mainExercise = mainExercise;
         this.kind = kind;
     }
 
-    @NonNull
+    public WorkOuts( int id, String user, long date, String kind, String mainExercise,int i) {
+        this.id = id;
+        this.user = user;
+        this.date = date;
+        this.kind = kind;
+        this.mainExercise = mainExercise;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+
     public String getUser() {
         return user;
     }

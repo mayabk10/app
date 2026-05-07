@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item android:id="@+id/splash"
+        android:title="splash"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/addW"
+        android:title="add workout"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/editW"
+        android:title="edit workout"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/userPage"
+        android:title="user page"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/statisticsPage"
+        android:title="statistics page"
+        app:showAsAction="never"
+
+        />
+</menu>
